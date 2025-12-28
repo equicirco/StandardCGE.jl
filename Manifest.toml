@@ -2,7 +2,7 @@
 
 julia_version = "1.12.3"
 manifest_format = "2.0"
-project_hash = "5787c762db8f58eaf60a5429a0be2c0b05ff4b0d"
+project_hash = "78470224e6086da35d45a02bd36243ea1a08048e"
 
 [[deps.ASL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -534,7 +534,7 @@ version = "2.6.1"
     ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
 
 [[deps.StandardCGE]]
-deps = ["CSV", "DataFrames", "Ipopt", "JuMP", "Parameters"]
+deps = ["Artifacts", "CSV", "DataFrames", "Ipopt", "JuMP", "Parameters"]
 path = "."
 uuid = "7f8ee165-c4eb-4a49-b88e-af6fb7f03590"
 version = "0.1.0"

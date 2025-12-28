@@ -37,7 +37,7 @@ function examples_dir()
         artifacts = Artifacts.load_artifacts_toml(artifacts_toml)
         spec = get(artifacts, "standard_cge_examples", nothing)
         if spec !== nothing
-            hash = spec["git-tree-sha1"]
+            hash = Base.SHA1(spec["git-tree-sha1"])
             artifact_dir = Artifacts.artifact_path(hash)
             if isdir(artifact_dir)
                 return artifact_dir
@@ -59,7 +59,7 @@ end
 
 function build_model(sam_table::SAM_table;
     optimizer = Ipopt.Optimizer,
-    optimizer_attributes::Dict{String, Any} = Dict("print_level" => 0, "max_iter" => 3000))
+    optimizer_attributes::AbstractDict{String, <:Any} = Dict("print_level" => 0, "max_iter" => 3000))
     start = compute_starting_values(sam_table)
     params = compute_calibration_params(sam_table, start)
     CGEmodel = Model(optimizer)
