@@ -1,3 +1,7 @@
+"""
+StandardCGE.jl implements a small standard CGE model with utilities to load a
+SAM, calibrate parameters, build, and solve the model.
+"""
 module StandardCGE
 
 ##### export main module functions
