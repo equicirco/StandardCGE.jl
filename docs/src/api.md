@@ -1,5 +1,11 @@
 # API
 
+## Module
+
+```@docs
+StandardCGE
+```
+
 ## Types
 
 ```@docs
@@ -33,6 +39,6 @@ computeCalibrationParams
 
 ```@docs
 build_model
-setup_model!
+StandardCGE.setup_model!
 solve_model
 ```
