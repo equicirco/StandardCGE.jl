@@ -7,7 +7,7 @@ Julia implementation of the standard CGE model from Hosoe, Gasawa, and Hashimoto
 https://equicirco.github.io/StandardCGE.jl
 
 ## License
-MIT License. See `LICENSE`.
+MIT License. See [`LICENSE`](LICENSE).
 
 ## Citation
 If you use this software, please cite:
@@ -21,5 +21,8 @@ If you use this software, please cite:
 }
 ```
 
+## Acknowledgments
+This project was initiated with the generous support of a SIS internal project from [NILU](https://nilu.com). Their support was crucial in starting this research and development effort.
+
 ## Author
-Riccardo Boero.
+Riccardo Boero (ribo@nilu.no)
