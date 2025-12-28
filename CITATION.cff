@@ -3,7 +3,7 @@ title: StandardCGE.jl - Julia implementation of the Standard CGE model from Hoso
 message: >-
   v0.1.0 - Full initial implementation and test.
 type: software
-doi: --tobeobtained--
+doi: 10.5281/zenodo.18079154
 authors:
   - given-names: Riccardo
     family-names: Boero
@@ -12,7 +12,7 @@ authors:
     affiliation: NILU
 identifiers:
   - type: doi
-    value: --tobeobtained--
+    value: 10.5281/zenodo.18079154
     description: This DOI represents all software versions.
 repository-code: 'https://github.com/equicirco/StandardCGE.jl'
 url: 'https://equicirco.github.io/StandardCGE.jl/'
