@@ -11,4 +11,5 @@ Security: For vulnerabilities.
 
 ## [0.1.0] - unreleased
 ### Added
-- Repo structure
+- Packaged the 3-year-old model implementation into StandardCGE.jl with documented APIs.
+- Initial documentation and examples for loading SAMs, calibration, and solving.
