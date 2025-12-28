@@ -1,0 +1,7 @@
+[standard_cge_examples]
+git-tree-sha1 = "d02d428a5ae7bac45e374d88c1211196a0769323"
+lazy = true
+
+    [[standard_cge_examples.download]]
+    sha256 = "5034293972401f4193e731f648f5f01ef1b2b341e9d479dc82e16afc11638945"
+    url = "https://raw.githubusercontent.com/equicirco/StandardCGE.jl/main/artifacts/standard_cge_examples.tar.gz"

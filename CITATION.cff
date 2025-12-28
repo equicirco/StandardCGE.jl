@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: StandardCGE.jl - Julia implementation of the Standard CGE model from Hosoe, Gasawa, and Hashimoto (Chapter 6).
+message: >-
+  v0.1.0 - Full initial implementation and test.
+type: software
+doi: --tobeobtained--
+authors:
+  - given-names: Riccardo
+    family-names: Boero
+    email: ribo@nilu.no
+    orcid: 'https://orcid.org/0000-0002-7468-9096'
+    affiliation: NILU
+identifiers:
+  - type: doi
+    value: --tobeobtained--
+    description: This DOI represents all software versions.
+repository-code: 'https://github.com/equicirco/StandardCGE.jl'
+url: 'https://equicirco.github.io/StandardCGE.jl/'
+abstract: >-
+  Julia implmentation of the Standard CGE model Chapter 6 of Hosoe, N, Gasawa, K, and Hashimoto, H, *Handbook of Computible General Equilibrium Modeling*, University of Tokyo Press, Tokyo, Japan, 2004
+keywords:
+  - General Equilibrium
+  - Social Welfare
+  - Julia Language
+  - CGE
+license: MIT
