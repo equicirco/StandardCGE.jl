@@ -33,6 +33,8 @@ sam = load_sam_table("path/to/your_sam.csv"; goods=["A", "B"], factors=["LAB", "
 model, start, params = solve_model(sam)
 ```
 
+For a full walkthrough, see "Using Your Own SAM" in the sidebar.
+
 ## Examples
 
 ```julia

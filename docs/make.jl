@@ -8,6 +8,7 @@ makedocs(
     sitename = "StandardCGE.jl",
     pages = [
         "Home" => "index.md",
+        "Using Your Own SAM" => "custom_sam.md",
         "API" => "api.md",
     ],
     format = Documenter.HTML(
