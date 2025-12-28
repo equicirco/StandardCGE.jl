@@ -1,3 +1,7 @@
+```@raw html
+<img src="assets/logo.png" class="logo" alt="StandardCGE logo">
+```
+
 # StandardCGE.jl
 
 StandardCGE.jl implements the small standard CGE model from the handbook

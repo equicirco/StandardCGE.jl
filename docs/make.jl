@@ -12,7 +12,6 @@ makedocs(
     ],
     format = Documenter.HTML(
         prettyurls = get(ENV, "CI", "false") == "true",
-        logo = "assets/logo.png",
         assets = ["assets/custom.css"],
     ),
 )
