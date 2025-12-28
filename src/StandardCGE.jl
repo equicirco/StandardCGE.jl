@@ -22,14 +22,29 @@ include("SAM_functions.jl")
 
 include("model_setup.jl")
 
+"""
+    default_sam_path() -> String
+
+Return the filesystem path for the default example SAM CSV bundled with the package.
+"""
 function default_sam_path()
     return normpath(joinpath(@__DIR__, "..", "data", "sam_2_2.csv"))
 end
 
+"""
+    load_default_sam() -> SAM_table
+
+Load the default example SAM table shipped with the package.
+"""
 function load_default_sam()
     return load_sam_table(default_sam_path())
 end
 
+"""
+    examples_dir() -> String
+
+Return the directory containing example SAM CSVs, preferring the artifact if available.
+"""
 function examples_dir()
     data_dir = normpath(joinpath(@__DIR__, "..", "data"))
     artifacts_toml = normpath(joinpath(@__DIR__, "..", "Artifacts.toml"))
@@ -47,16 +62,31 @@ function examples_dir()
     return data_dir
 end
 
+"""
+    list_examples() -> Vector{String}
+
+List available example SAM CSV filenames.
+"""
 function list_examples()
     dir = examples_dir()
     return sort(filter(name -> endswith(name, ".csv"), readdir(dir)))
 end
 
+"""
+    load_example(name::AbstractString; kwargs...) -> SAM_table
+
+Load an example SAM CSV by filename from the examples directory.
+"""
 function load_example(name::AbstractString; kwargs...)
     dir = examples_dir()
     return load_sam_table(joinpath(dir, name); kwargs...)
 end
 
+"""
+    build_model(sam_table::SAM_table; optimizer, optimizer_attributes) -> (model, start, params)
+
+Construct the JuMP model without solving it, returning the model and calibration outputs.
+"""
 function build_model(sam_table::SAM_table;
     optimizer = Ipopt.Optimizer,
     optimizer_attributes::AbstractDict{String, <:Any} = Dict("print_level" => 0, "max_iter" => 3000))
@@ -70,6 +100,11 @@ function build_model(sam_table::SAM_table;
     return CGEmodel, start, params
 end
 
+"""
+    solve_model(sam_table::SAM_table; kwargs...) -> (model, start, params)
+
+Build and solve the model, returning the JuMP model and calibration outputs.
+"""
 function solve_model(sam_table::SAM_table; kwargs...)
     CGEmodel, start, params = build_model(sam_table; kwargs...)
     optimize!(CGEmodel)

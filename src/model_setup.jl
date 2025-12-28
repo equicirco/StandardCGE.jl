@@ -1,3 +1,8 @@
+"""
+    setup_model!(model::Model, sam_table::SAM_table, start::starting_values, params::model_parameters) -> Model
+
+Populate `model` with variables, constraints, and objective for the CGE system.
+"""
 function setup_model!(CGEmodel::Model, sam_table::SAM_table, start::starting_values, params::model_parameters)
     goods = sam_table.goods
     factors = sam_table.factors

@@ -1,3 +1,8 @@
+"""
+    SAM_table
+
+Container for the Social Accounting Matrix (SAM) and its label metadata.
+"""
 @with_kw struct SAM_table
     ##### Define labels used in CSV file
     # goods / industries
@@ -23,6 +28,11 @@
     SAM::Containers.DenseAxisArray
  end
 
+"""
+    starting_values
+
+Calibrated starting values derived from a SAM table.
+"""
 @with_kw struct starting_values
     # direct tax
     Td0::Float64
@@ -70,7 +80,12 @@
     pWm::Containers.DenseAxisArray
  end
 
- @with_kw struct model_parameters
+"""
+    model_parameters
+
+Calibrated model parameters derived from a SAM table and starting values.
+"""
+@with_kw struct model_parameters
     # elasticity of substitution
     σ::Containers.DenseAxisArray
     # elastictiy of transformation

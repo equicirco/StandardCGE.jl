@@ -1,3 +1,8 @@
+"""
+    load_sam_table(file_path::AbstractString; kwargs...) -> SAM_table
+
+Load a SAM CSV from `file_path` and return a `SAM_table`.
+"""
 function load_sam_table(file_path::AbstractString; goods::Vector{String} = ["BRD", "MLK"],
     factors::Vector{String} = ["CAP", "LAB"],
     numeraire_factor_label::String = "LAB",
@@ -31,6 +36,11 @@ function load_sam_table(file_path::AbstractString; goods::Vector{String} = ["BRD
     )
 end
 
+"""
+    load_sam_table(io::IO; kwargs...) -> SAM_table
+
+Load a SAM CSV from an `IO` stream and return a `SAM_table`.
+"""
 function load_sam_table(io::IO; goods::Vector{String} = ["BRD", "MLK"],
     factors::Vector{String} = ["CAP", "LAB"],
     numeraire_factor_label::String = "LAB",
@@ -64,6 +74,11 @@ function load_sam_table(io::IO; goods::Vector{String} = ["BRD", "MLK"],
     )
 end
 
+"""
+    compute_starting_values(sam_table::SAM_table) -> starting_values
+
+Compute calibrated starting values from a `SAM_table`.
+"""
 function compute_starting_values(sam_table::SAM_table)
     sam = sam_table.SAM
     goods = sam_table.goods
@@ -97,6 +112,11 @@ function compute_starting_values(sam_table::SAM_table)
     pWe = pWe, pWm = pWm)
 end
 
+"""
+    compute_calibration_params(sam_table::SAM_table, start::starting_values) -> model_parameters
+
+Compute calibrated model parameters from a `SAM_table` and starting values.
+"""
 function compute_calibration_params(sam_table::SAM_table, start::starting_values)
     goods = sam_table.goods
     σ = Containers.DenseAxisArray(fill(2, length(goods)), vec(goods))
@@ -125,14 +145,29 @@ function compute_calibration_params(sam_table::SAM_table, start::starting_values
     xie = xie, θ = θ, ssp = ssp, ssg = ssg, τd = τd)
 end
 
+"""
+    loadSAMTableCSVFile(filePath::String) -> SAM_table
+
+Legacy alias for `load_sam_table`.
+"""
 function loadSAMTableCSVFile(filePath::String)
     return load_sam_table(filePath)
 end
 
+"""
+    computeStartingValues(sam_table::SAM_table) -> starting_values
+
+Legacy alias for `compute_starting_values`.
+"""
 function computeStartingValues(sam_table::SAM_table)
     return compute_starting_values(sam_table)
 end
 
+"""
+    computeCalibrationParams(sam_table::SAM_table, start::starting_values) -> model_parameters
+
+Legacy alias for `compute_calibration_params`.
+"""
 function computeCalibrationParams(sam_table::SAM_table, start::starting_values)
     return compute_calibration_params(sam_table, start)
 end
