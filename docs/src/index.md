@@ -16,6 +16,23 @@ It is *computable* because it is calibrated with data (typically from a Social A
 
 In a CGE model, economic agents follow explicit behavioral rules (e.g., firms minimize costs, households maximize utility), and **prices adjust so that all markets clear simultaneously**. CGE models are suitable for analyzing how a policy or external shock propagates through the economy, not only in the directly affected sector, but also through input–output linkages, income changes, and price effects.
 
+## Project info
+
+- Source code: [https://github.com/equicirco/StandardCGE.jl](https://github.com/equicirco/StandardCGE.jl)
+- License: [https://github.com/equicirco/StandardCGE.jl/blob/main/LICENSE](https://github.com/equicirco/StandardCGE.jl/blob/main/LICENSE)
+- Author: Riccardo Boero
+- Citation (DOI): [https://doi.org/10.5281/zenodo.18079154](https://doi.org/10.5281/zenodo.18079154)
+
+```bibtex
+@software{StandardCGEjl,
+  title = {StandardCGE.jl - Julia implementation of the Standard CGE model from Hosoe, Gasawa, and Hashimoto (Chapter 6).},
+  author = {Boero, Riccardo},
+  doi = {10.5281/zenodo.18079154},
+  url = {https://equicirco.github.io/StandardCGE.jl/},
+  year = {2025}
+}
+```
+
 ## Install
 
 ```julia
