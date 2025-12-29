@@ -1,0 +1,22 @@
+name: Register Julia Package
+
+on:
+    release:
+        types: [created]
+
+permissions:
+    issues: write
+
+jobs:             
+    register-julia-package:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Trigger Registrator
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  curl -sS -X POST \
+                    -H "Authorization: token ${GITHUB_TOKEN}" \
+                    -H "Accept: application/vnd.github+json" \
+                    https://api.github.com/repos/equicirco/StandardCGE.jl/issues/1/comments \
+                    -d "{\"body\": \"@JuliaRegistrator register\\n\\nRelease notes:\\n\\nThere are no breaking changes. See the changelog.\"}"
