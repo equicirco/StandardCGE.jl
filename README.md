@@ -24,7 +24,8 @@ If you use this software, please cite:
   title = {StandardCGE.jl - Julia implementation of the Standard CGE model from Hosoe, Gasawa, and Hashimoto (Chapter 6).},
   author = {Boero, Riccardo},
   doi = {10.5281/zenodo.18079154},
-  url = {https://equicirco.github.io/StandardCGE.jl/}
+  url = {https://equicirco.github.io/StandardCGE.jl/},
+  year = {2025}
 }
 ```
 
