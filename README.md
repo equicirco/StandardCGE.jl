@@ -13,8 +13,12 @@ In a CGE model, economic agents follow explicit behavioral rules (e.g., firms mi
 ## Documentation
 https://equicirco.github.io/StandardCGE.jl
 
-## License
-MIT License. See [`LICENSE`](LICENSE).
+## Installation
+StandardCGE.jl is available as a package from the Julia General Registry:
+```julia
+using Pkg
+Pkg.add("StandardCGE")
+```
 
 ## Citation
 If you use this software, please cite:
@@ -28,6 +32,9 @@ If you use this software, please cite:
   year = {2025}
 }
 ```
+
+## License
+MIT License. See [`LICENSE`](LICENSE).
 
 ## Acknowledgments
 This project was initiated with the generous support of a SIS internal project from [NILU](https://nilu.com). Their support was crucial in starting this research and development effort.
