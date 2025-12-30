@@ -4,9 +4,9 @@
 
 # StandardCGE.jl
 
-StandardCGE.jl implements the small standard CGE model from the handbook
-chapter 6, with utilities to load a SAM from CSV, calibrate parameters, and
-solve the model with JuMP/Ipopt.
+Julia implmentation of the Standard CGE model Chapter 6 of Hosoe, N, Gasawa, K, and Hashimoto, H, *Handbook of Computable General Equilibrium Modeling*, University of Tokyo Press, Tokyo, Japan, 2004
+
+StandardCGE.jl implements the small standard CGE model from the handbook chapter 6, with utilities to load a SAM from CSV, calibrate parameters, and solve the model with JuMP/Ipopt.
 
 ## What a CGE is?
 
