@@ -33,11 +33,11 @@ In a CGE model, economic agents follow explicit behavioral rules (e.g., firms mi
 }
 ```
 
-## Install
-
+## Installation
+StandardCGE.jl is available as a package from the Julia General Registry:
 ```julia
 using Pkg
-Pkg.add(url="https://github.com/equicirco/StandardCGE.jl")
+Pkg.add("StandardCGE")
 ```
 
 ## Quickstart
