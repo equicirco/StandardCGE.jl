@@ -17,7 +17,7 @@ identifiers:
 repository-code: 'https://github.com/equicirco/StandardCGE.jl'
 url: 'https://equicirco.github.io/StandardCGE.jl/'
 abstract: >-
-  Julia implmentation of the Standard CGE model Chapter 6 of Hosoe, N, Gasawa, K, and Hashimoto, H, *Handbook of Computible General Equilibrium Modeling*, University of Tokyo Press, Tokyo, Japan, 2004
+  Julia implmentation of the Standard CGE model Chapter 6 of Hosoe, N, Gasawa, K, and Hashimoto, H, *Handbook of Computable General Equilibrium Modeling*, University of Tokyo Press, Tokyo, Japan, 2004
 keywords:
   - General Equilibrium
   - Social Welfare

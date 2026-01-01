@@ -1,0 +1,23 @@
+name: TagBot
+
+on:
+  workflow_dispatch:
+    inputs:
+      lookback:
+        default: "3"
+        required: false
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  TagBot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Julia TagBot
+        uses: JuliaRegistries/TagBot@v1.23.5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          lookback: ${{ github.event.inputs.lookback }}
