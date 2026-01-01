@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: StandardCGE.jl - Julia implementation of the Standard CGE model from Hosoe, Gasawa, and Hashimoto (Chapter 6).
 message: >-
-  v0.1.0 - Full initial implementation and test.
+  v0.1.1 - Improved documentation and compat deps.
 type: software
 doi: 10.5281/zenodo.18079154
 authors:
