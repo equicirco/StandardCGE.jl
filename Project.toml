@@ -1,6 +1,6 @@
 name = "StandardCGE"
 uuid = "7f8ee165-c4eb-4a49-b88e-af6fb7f03590"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Riccardo Boero <ribo@nilu.no>"]
 
 [deps]
