@@ -1,8 +1,7 @@
 ```@raw html
-<picture class="index-logo">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/logo-light.png">
-  <img src="assets/logo-light.png" alt="StandardCGE logo" width="180">
+<picture>
+  <source srcset="assets/logo-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="assets/logo-light.png" alt="StandardCGE logo" width="180" style="vertical-align: middle;">
 </picture>
 ```
 
