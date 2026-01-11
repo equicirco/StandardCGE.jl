@@ -2,3 +2,41 @@ img.logo {
   max-height: 48px;
   width: auto;
 }
+
+img.logo-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  img.logo-light {
+    display: none;
+  }
+
+  img.logo-dark {
+    display: inline;
+  }
+}
+
+:root[data-theme="documenter-dark"] img.logo-light,
+html.theme--documenter-dark img.logo-light,
+body.theme--documenter-dark img.logo-light {
+  display: none;
+}
+
+:root[data-theme="documenter-dark"] img.logo-dark,
+html.theme--documenter-dark img.logo-dark,
+body.theme--documenter-dark img.logo-dark {
+  display: inline;
+}
+
+:root[data-theme="documenter-light"] img.logo-light,
+html.theme--documenter-light img.logo-light,
+body.theme--documenter-light img.logo-light {
+  display: inline;
+}
+
+:root[data-theme="documenter-light"] img.logo-dark,
+html.theme--documenter-light img.logo-dark,
+body.theme--documenter-light img.logo-dark {
+  display: none;
+}

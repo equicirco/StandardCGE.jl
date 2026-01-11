@@ -1,4 +1,8 @@
-<img src="docs/assets/logo.png" alt="StandardCGE logo" width="180">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/src/assets/logo-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/src/assets/logo-light.png">
+  <img src="docs/src/assets/logo-light.png" alt="StandardCGE logo" width="180">
+</picture>
 
 # StandardCGE.jl
 Julia implementation of the standard CGE model from Hosoe, Gasawa, and Hashimoto (Chapter 6).

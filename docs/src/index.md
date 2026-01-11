@@ -1,5 +1,6 @@
 ```@raw html
-<img src="assets/logo.png" class="logo" alt="StandardCGE logo">
+<img src="assets/logo-light.png" class="logo logo-light" alt="StandardCGE logo">
+<img src="assets/logo-dark.png" class="logo logo-dark" alt="StandardCGE logo">
 ```
 
 # StandardCGE.jl
