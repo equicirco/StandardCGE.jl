@@ -1,5 +1,9 @@
 ```@raw html
-<span class="logo logo--theme" role="img" aria-label="StandardCGE logo"></span>
+<picture class="index-logo">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/logo-light.png">
+  <img src="assets/logo-light.png" alt="StandardCGE logo" width="180">
+</picture>
 ```
 
 # StandardCGE.jl

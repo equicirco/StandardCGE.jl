@@ -1,30 +1,4 @@
-.logo {
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
-  display: inline-block;
-  height: 48px;
+.index-logo img {
   width: 180px;
-}
-
-.logo--theme {
-  background-image: url("logo-light.png");
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo--theme {
-    background-image: url("logo-dark.png");
-  }
-}
-
-:root[data-theme="documenter-dark"] .logo--theme,
-html.theme--documenter-dark .logo--theme,
-body.theme--documenter-dark .logo--theme {
-  background-image: url("logo-dark.png");
-}
-
-:root[data-theme="documenter-light"] .logo--theme,
-html.theme--documenter-light .logo--theme,
-body.theme--documenter-light .logo--theme {
-  background-image: url("logo-light.png");
+  height: auto;
 }
