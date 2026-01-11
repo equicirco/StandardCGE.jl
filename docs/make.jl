@@ -13,7 +13,10 @@ makedocs(
     ],
     format = Documenter.HTML(
         prettyurls = get(ENV, "CI", "false") == "true",
-        assets = ["assets/custom.css"],
+        assets = [
+            "assets/deepwiki-chat.css",
+            "assets/deepwiki-chat.js",
+        ],
     ),
 )
 
