@@ -1,42 +1,30 @@
-img.logo {
-  max-height: 48px;
-  width: auto;
+.logo {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  display: inline-block;
+  height: 48px;
+  width: 180px;
 }
 
-img.logo-dark {
-  display: none;
+.logo--theme {
+  background-image: url("logo-light.png");
 }
 
 @media (prefers-color-scheme: dark) {
-  img.logo-light {
-    display: none;
-  }
-
-  img.logo-dark {
-    display: inline;
+  .logo--theme {
+    background-image: url("logo-dark.png");
   }
 }
 
-:root[data-theme="documenter-dark"] img.logo-light,
-html.theme--documenter-dark img.logo-light,
-body.theme--documenter-dark img.logo-light {
-  display: none;
+:root[data-theme="documenter-dark"] .logo--theme,
+html.theme--documenter-dark .logo--theme,
+body.theme--documenter-dark .logo--theme {
+  background-image: url("logo-dark.png");
 }
 
-:root[data-theme="documenter-dark"] img.logo-dark,
-html.theme--documenter-dark img.logo-dark,
-body.theme--documenter-dark img.logo-dark {
-  display: inline;
-}
-
-:root[data-theme="documenter-light"] img.logo-light,
-html.theme--documenter-light img.logo-light,
-body.theme--documenter-light img.logo-light {
-  display: inline;
-}
-
-:root[data-theme="documenter-light"] img.logo-dark,
-html.theme--documenter-light img.logo-dark,
-body.theme--documenter-light img.logo-dark {
-  display: none;
+:root[data-theme="documenter-light"] .logo--theme,
+html.theme--documenter-light .logo--theme,
+body.theme--documenter-light .logo--theme {
+  background-image: url("logo-light.png");
 }
